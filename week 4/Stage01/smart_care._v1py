@@ -1,0 +1,18 @@
+print("Welcome to Smart Care!")
+#first appointment
+patient_name: str = input("Please enter your name: ") # allows patient to enter their name
+practitioner_name: str = input(f"Hello, {patient_name}! Please enter the practitioner's name: ") # allows patient to enter the practitioner's name
+appointment_date_time= input("Please enter the appointment date and time: ") # allows patient to enter the appointment date and time
+
+
+#second appointment
+patient_name2: str = input("Please enter your name: ") # allows patient to enter their name
+practitioner_name2: str = input(f"Hello, {patient_name2}! Please enter the practitioner's name: ") # allows patient to enter the practitioner's name
+appointment_date_time2= input("Please enter the appointment date and time: ") # allows patient to enter the appointment date and time
+
+if practitioner_name == practitioner_name2 and appointment_date_time == appointment_date_time2: #checks if the practitioner name and appointment date and time are the same for both appointments
+    raise ValueError("You cannot schedule two appointments with the same practitioner at the same time.") #will rase an error if the practitioner name and appointment date and time are the same for both appointments
+else:
+    print(f"Appointment 1: {patient_name} with {practitioner_name} on {appointment_date_time}") #welcomes patient 1
+    print(f"Appointment 2: {patient_name2} with {practitioner_name2} on {appointment_date_time2}")  #welcomes patient 2
+
